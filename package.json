@@ -1,0 +1,35 @@
+{
+  "name": "node-redis-rabbit",
+  "version": "1.0.0",
+  "description": "using redis and rabbitMQ with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
+    "redis-publisher": "nodemon --exec babel-node redis-publisher.js",
+    "redis-operation": "nodemon --exec babel-node redis-operation.js",
+    "redis-subscriber": "nodemon --exec babel-node redis-subscriber.js",
+    "mq-consumer": "nodemon --exec babel-node mq-consumer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmansimli/node-redis-rabbit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmansimli/node-redis-rabbit/issues"
+  },
+  "homepage": "https://github.com/fmansimli/node-redis-rabbit#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "redis": "^3.1.2"
+  }
+}
